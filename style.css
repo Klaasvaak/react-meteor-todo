@@ -22,3 +22,52 @@
 .ui.toggle.checkbox input[type="radio"]:checked ~ label:before {
     background-color: #d95c5c;
 }
+
+.todoitem-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.todoitem-enter.todoitem-enter-active {
+  opacity: 1;
+}
+
+.todoitem-appear {
+  opacity: 0.01;
+  transition: opacity 1.4s ease-in;
+}
+
+.todoitem-appear:nth-child(0) {
+  transition: opacity 0.5s ease-in;
+}
+
+.todoitem-appear:nth-child(1) {
+  transition: opacity 0.9s ease-in;
+}
+
+.todoitem-appear:nth-child(2) {
+  transition: opacity 1.2s ease-in;
+}
+
+.todoitem-appear:nth-child(3) {
+  transition: opacity 1.3s ease-in;
+}
+
+.todoitem-appear:nth-child(4) {
+  transition: opacity 1.35s ease-in;
+}
+
+.todoitem-appear.todoitem-appear-active {
+  opacity: 1;
+}
+
+.todoitem-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in, margin-left .5s ease-in, margin-right .5s ease-in;
+}
+
+.todoitem-leave.todoitem-leave-active {
+  opacity: 0.01;
+  margin-left: -500px;
+  margin-right: 500px;
+}
